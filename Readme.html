@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('background.jpeg');
+            background-size: cover;
+        }
+
+        header {
+            color: white;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card i {
+            font-size: 40px;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hover-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hover-button:hover {
+            background-color: coral;
+        }
+
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">To-do List</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active hover-button" aria-current="page" href="assessment 1.html">Home</a>
+                    <a class="nav-link hover-button" href="index.html">About</a>
+                    <a class="nav-link hover-button" href="#">Panduan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Task Management App</h1>
+        <p>Kelola tugas Anda dengan mudah!</p>
+    </header>
+    <main>
+        <section class="features">
+            <h2>Fitur Utama</h2>
+            <div class="feature-card">
+                <i class="fas fa-plus-circle"></i>
+                <h3>Menambahkan Tugas</h3>
+                <p>Tambahkan tugas baru dengan memasukkan teks dan klik "Tambah Tugas".</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Menandai Tugas Selesai</h3>
+                <p>Tandai tugas sebagai selesai dengan tombol "Selesai".</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-filter"></i>
+                <h3>Filter Tugas</h3>
+                <p>Filter tugas berdasarkan status: selesai atau belum selesai.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-trash-alt"></i>
+                <h3>Menghapus Tugas Selesai</h3>
+                <p>Hapus semua tugas yang telah selesai dengan mudah.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Tampilan Dinamis</h3>
+                <p>Daftar tugas diperbarui secara real-time.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <footer>
+        <p>&copy; 2023 Task Management App. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
